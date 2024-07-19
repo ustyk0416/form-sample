@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>作図依頼フォーム</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>作図依頼フォーム</h1>
+        <form id="requestForm">
+            <div class="form-group">
+                <label for="clientName">客先名/工事名:</label>
+                <input type="text" id="clientName" name="clientName" required>
+            </div>
+            <div class="form-group">
+                <label for="drawingRequest">図面UP希望:</label>
+                <input type="text" id="drawingRequest" name="drawingRequest" required>
+            </div>
+            <div class="form-group">
+                <label for="quantity">数量:</label>
+                <input type="number" id="quantity" name="quantity" required>
+            </div>
+            <div class="form-group">
+                <label for="bathtubType">浴槽タイプ:</label>
+                <select id="bathtubType" name="bathtubType" required>
+                    <option value="タイプA">タイプA</option>
+                    <option value="タイプB">タイプB</option>
+                    <option value="タイプC">タイプC</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="category">区分:</label>
+                <select id="category" name="category" required>
+                    <option value="区分1">区分1</option>
+                    <option value="区分2">区分2</option>
+                    <option value="区分3">区分3</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="installationLocation">設置箇所/部屋タイプ:</label>
+                <input type="text" id="installationLocation" name="installationLocation" required>
+            </div>
+            <div class="form-group">
+                <label for="salesRep">営業担当:</label>
+                <input type="text" id="salesRep" name="salesRep" required>
+            </div>
+            <div class="form-group">
+                <label for="client">客先:</label>
+                <input type="text" id="client" name="client" required>
+            </div>
+            <div class="form-group">
+                <label for="owner">施主:</label>
+                <input type="text" id="owner" name="owner" required>
+            </div>
+            <div class="form-group">
+                <label for="architect">設計事務所:</label>
+                <input type="text" id="architect" name="architect" required>
+            </div>
+            <button type="submit">送信</button>
+        </form>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
